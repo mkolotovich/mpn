@@ -1,0 +1,96 @@
+.tabs-list {
+  margin-top: 56px;
+  padding-left: 0;
+  margin-bottom: 32px;
+}
+
+.tabs-buttons-list {
+  padding-left: 0;
+  margin-bottom: 32px;
+  list-style: none;
+}
+
+.tabs-buttons-item {
+  margin-right: 16px;
+}
+
+.tab-item {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: $black;
+  padding-left: 56px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.tab-item::before {
+  width: 32px;
+  height: 32px;
+  left: 0;
+  position: absolute;
+  background: #F0C630;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.tab-list-pros .tab-item::before {
+  content: "+";
+}
+
+.tabs-buttons-item:first-child .tabs-button {
+  border: solid 1px #C4C4C4;
+}
+
+.tabs-button {
+  font-family: $roboto;
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-width: 1px;
+  border-radius: 28px;
+  border: none;
+  border: 1px solid transparent;
+}
+
+.tabs-button:hover {
+  border: 1px solid #F0C630;
+}
+
+.tab-list-cons .tab-item {
+  color: rgba(0,0,0,0.5);
+  list-style: none;
+}
+
+.tab-list-cons .tab-item::before {
+  content: "–";
+}
+
+.tab-list-pros {
+  max-width: 486px;
+  list-style: none;
+}
+@media (max-width: $laptop-width) {
+  .tabs-list-item {
+    width: max-content;
+  }
+}
+@media (max-width: $mobile-width) {
+  .tabs-button {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .tab-item {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .tab-list-cons .tab-item:last-child {
+    margin-bottom: 0;
+  }
+}

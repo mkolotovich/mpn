@@ -1,0 +1,22 @@
+.header {
+  min-height: 636px;
+}
+
+.header-text {
+  margin-bottom: 188px;
+}
+
+.header-progress {
+  height: 1px;
+  border: 0;
+  top: 80px;
+}
+
+@media (max-width: $mobile-width) {
+  .header-progress {
+    top: 48px;
+  }
+  .header {
+    min-height: 342px;
+  }
+}

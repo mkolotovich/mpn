@@ -1,0 +1,122 @@
+.see-also-link:hover {
+  cursor: default;
+}
+
+.see-also-link:hover .header-level-3 {
+  color: #5F62AC;
+}
+
+.see-also-item {
+  flex-basis: 261px;
+}
+
+@media (max-width: $laptop-width) {
+  .see-also-item:nth-child(1) {
+    margin-bottom: 24px;
+  }
+  .see-also-list {
+    margin-bottom: 48px;
+  }
+}
+
+.see-also-item:first-child .see-also-button {
+  background: #774AA3;
+}
+
+.see-also-button {
+  top: 8px;
+  left: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #FC822A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.see-also-button:hover + .d-none {
+  display: block;
+}
+
+.see-also-hidden {
+  font-family: $roboto;
+  font-style: normal;
+  font-size: 16px;
+  top: 8px;
+  left: 24px;
+  background: rgba($color: #000000, $alpha: 0.6);
+  width: 171px;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 23px;
+  box-sizing: border-box;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.see-also-second-button {
+  top: 8px;
+  left: 28px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  background: #EE4713;
+  justify-content: center;
+}
+
+.see-also-img{
+  font-family: cursive;
+  color: white;
+  font-size: 20px;
+}
+
+.see-also-price {
+  top: 128px;
+  left: 16px;
+}
+
+.see-also-description {
+  top: 148px;
+  left: 16px;
+  margin-top: 0;
+}
+
+.see-also-station {
+  padding-left: 16px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.see-also-station::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FCA82A;
+  left: 0;
+  border-radius: 50%;
+}
+
+.see-also-time {
+  padding-left: 12px;
+  margin-left: 7px;
+  background-image: url("../img/Combined.svg");
+  background-repeat: no-repeat;
+  background-position: -5px 0px;
+}
+
+@media (max-width: $mobile-width) {
+  .see-also-item {
+    margin-bottom: 24px;
+  }
+  .see-also-list {
+    margin-bottom: 8px;
+  }
+}

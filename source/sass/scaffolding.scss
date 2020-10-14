@@ -1,0 +1,424 @@
+* {
+  transition: all 0.5s;
+}
+
+body {
+  min-width: 320px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $roboto;
+  font-style: normal;
+  color: $white;
+  background-color: $white;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.header-level-1 {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  color: $white;
+  margin-top: 140px;
+  max-width: 828px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.relative {
+  position: relative;
+}
+
+.visible {
+  z-index: 1;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.header-level-2 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  color: $white;
+  max-width: 542px;
+  margin-top: 56px;
+}
+
+@media (max-width: $laptop-width) {
+  .header-level-1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .header-level-2 {
+    font-size: 28px;
+    line-height: 36px;
+    max-width: none;
+    margin-top: 48px;
+  }
+
+  .header-level-2.mb-56 {
+    margin-bottom: 24px;
+  }
+}
+
+.mb-56 {
+  margin-bottom: 56px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-26 {
+  margin-bottom: 26px;
+}
+
+.mb-2 {
+  margin-bottom: 2px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.header-level-3 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: $black;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.header-level-4 {
+  font-weight: normal;
+  color: $black;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-top: 32px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.container {
+  max-width: 1104px;
+}
+
+@media (max-width: $laptop-width) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 704px;
+  }
+}
+
+@media (max-width: $mobile-width) { 
+  .container {
+    max-width: 272px;
+  }
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-small {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 28px;
+  color: $white;
+  font-family: $roboto;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 4px;
+}
+
+.btn-bordered {
+  border: 1px solid #FFFFFF;
+}
+
+@media (max-width: $laptop-width) {
+  .btn-bordered {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header-level-1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 48px;
+  }
+  .header-level-2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 32px;
+  }
+  .header-level-2.mb-56 {
+    margin-bottom: 16px;
+  }
+  .btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .btn-bordered {
+    margin-bottom: 32px;
+  }
+}
+
+.btn-bordered:hover {
+  border: 1px solid #F0C630;
+  cursor: default;
+}
+
+.btn-submit {
+  margin-top: 24px;
+  margin-bottom: 56px;
+  background-color: #fff;
+  border: none;
+}
+
+.btn-submit:disabled {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.btn-submit:hover {
+  color: #F0C630;
+}
+
+.map-btn {
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 150%;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  padding-left: 58px;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  background-image: url("../img/chevron-up.svg");
+  background-repeat: no-repeat;
+  background-position: 29px center;
+  border: 1px solid transparent;
+}
+
+.map-btn:hover {
+  border: 1px solid #F0C630;
+}
+
+.bg-purple {
+  background: #5F62AC;
+}
+
+.bg-grey {
+  background:#f2f2f2;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-dark-grey {
+  background-color: #E5E5E5;
+}
+
+.d-none {
+  display: none;
+}
+
+.color-purple {
+  color: #5F62AC;
+}
+
+.color-black {
+  color: $black;
+}
+
+.color-white {
+  color: $white;
+}
+
+.color-transparent-black {
+  color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.text-decoration-none{
+  text-decoration: none;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.ymaps-2-1-77-controls__toolbar_left, .ymaps-2-1-77-zoom__scale, .ymaps-2-1-77-map-copyrights-promo, .ymaps-2-1-77-traffic, .ymaps-2-1-77-listbox, .ymaps-2-1-77-scaleline, .ymaps-2-1-77-controls__bottom, .ymaps-2-1-77-copyright__content {
+  display: none!important;
+}
+
+.ymaps-2-1-77-zoom {
+  height: 6px!important;
+  top: 60px!important;
+}
+
+.ymaps-2-1-77-float-button-icon_icon_expand {
+  background-image: url("../img/Subtract.svg")!important;
+}
+
+@media (max-width: $laptop-width) {
+  .ymaps-2-1-77-map {
+    left: -16px;
+  }
+  .ymaps-2-1-77-map-bg {
+    width: 768px!important;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba($color: #000000, $alpha: 0.7);
+}
+
+.overlay-form {
+  width: 375px;
+  margin: auto;
+  background: #5F62AC;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+.overlay-checkbox {
+  display: none;
+}
+
+.overlay-custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+  display: block;
+  margin-right: 12px;
+}
+
+.overlay-checkbox:checked + .overlay-custom-checkbox {
+  background-image: url("../img/check-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay-label {
+  margin-bottom: 16px;
+}
+
+.overlay-btn {
+  background-image: url("../img/Vector 5.svg");
+  z-index: 2;
+}
+
+@media (max-width: $mobile-width) {
+  .ymaps-2-1-77-map-bg {
+    width: 320px!important;
+    height: 263px!important;
+  }
+  .ymaps-2-1-77-map {
+    left: -12px;
+  }
+  .ymaps-2-1-77-controls__control {
+    top: 50px!important;
+  }
+  .map-btn {
+    font-size: 0;
+    top: 223px;
+    bottom: auto;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    height: 32px;
+    padding-right: 29px;
+    padding-left: 29px;
+    width: 72px;
+  }
+  .overlay {
+    left: -24px;
+    height: 263px
+  }
+  .overlay-form {
+    padding-left: 24px;
+    padding-top: 26px;
+  }
+  .overlay-label {
+    margin-bottom: 8px;
+  }
+  .overlay-btn {
+    left: 48px;
+  }
+  .btn-submit {
+    margin-bottom: 32px;
+  }
+  .header-level-4 {
+    padding-top: 0;
+  }
+}

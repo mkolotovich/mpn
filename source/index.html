@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Многофункциональный жилой квартал HEADLINER">
+  <title>Многофункциональный жилой квартал HEADLINER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header bg-purple">
+    <progress class="header-progress d-block w-100 relative" value="0"></progress>
+    <nav class="menu d-flex justify-content-between align-items-center relative">
+      <a href="#">
+        <img class="menu-img d-block" src="img/logotype.svg" width="55" height="27" alt="logo">
+      </a>
+      <button class="hamburger d-none"></button>
+      <ul class="menu-list lh-1 d-flex justify-content-between">
+        <li class="menu-item"><a class="menu-link text-decoration-none color-white" href="#">Описание</a></li>
+        <li class="menu-item"><a class="menu-link text-decoration-none color-white" href="#">Локация</a></li>
+        <li class="menu-item"><a class="menu-link text-decoration-none color-white" href="#">Смотрите также</a></li>
+        <li class="menu-item"><a class="menu-link text-decoration-none color-white" href="#">Запись на просмотр</a></li>
+      </ul>
+    </nav>
+    <div class="container mx-auto">
+      <h1 class="header-level-1 relative visible">
+        Многофункциональный жилой квартал HEADLINER
+      </h1>
+      <p class="relative header-text visible">Сдача — 4 кв. 2022, есть сданные</p>
+      <div class="slider">
+        <picture>
+          <source srcset="img/HEADLINER-mobile.jpg" media="(max-width: 767px)">
+          <source srcset="img/HEADLINER-tablet.jpg" media="(max-width: 1199px)">
+          <img class="slider-img d-block" src="img/HEADLINER.jpg" alt="HEADLINER">
+        </picture>
+        <form class="slider-input-wrapper" action="">
+          <input class="slider-input" type="radio" name="slider" id="" checked>
+          <input class="slider-input" type="radio" name="slider" id="">
+          <input class="slider-input" type="radio" name="slider" id="">
+          <input class="slider-input" type="radio" name="slider" id="">
+          <input class="slider-input" type="radio" name="slider" id="">
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container mx-auto">
+      <ul class="tabs-list">
+        <li class="tabs-list-item">
+          <ul class="tabs-buttons-list d-flex">
+            <li class="tabs-buttons-item"><button class="tabs-button bg-white">Плюсы и минусы</button></li>
+            <li class="tabs-buttons-item"><button class="tabs-button bg-dark-grey">Аэротур</button></li>
+            <li class="tabs-buttons-item"><button class="tabs-button bg-dark-grey">Планировки</button></li>
+            <li class="tabs-buttons-item"><button class="tabs-button bg-dark-grey">Застройщик</button></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="tab-list d-flex pl-0 flex-wrap">
+            <li>
+              <ul class="tab-list-pros pl-0">
+                <li class="tab-item">Привлекательная архитектура</li>
+                <li class="tab-item">Большой выбор квартир</li>
+                <li class="tab-item">Поразительные виды из окон</li>
+                <li class="tab-item">Сложившийся район со всем необходимым</li>
+                <li class="tab-item">Сравнительно низкие цены</li>
+              </ul>
+            </li>
+            <li>
+              <ul class="tab-list-cons pl-0">
+                <li class="tab-item">Недостаток собственной инфраструктуры</li>
+                <li class="tab-item">Частые пробки вокруг</li>
+                <li class="tab-item">Не лучшая экология</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <section class="bg-purple">
+      <div class="container mx-auto d-flex align-items-center justify-content-between flex-wrap">
+        <h2 class="header-level-2 mb-56">
+          Запишитесь на просмотр и оцените всё сами!
+        </h2>
+        <a class="btn btn-bordered text-decoration-none" href="#">Запись на просмотр</a>
+      </div>
+    </section>
+    <div class="container mx-auto">
+      <section class="location">
+        <h2 class="header-level-2 color-black mb-0">Локация</h2>
+        <p class="color-black mb-0">Москва, ЦАО, Пресненский, Шмитовский проезд, вл. 39</p>
+        <div class="location-stations">
+          <a class="location-stations-link color-purple text-decoration-none" href="">Шелепиха</a>
+          <span class="color-transparent-black mr-32">5 мин пешком</span>
+          <a class="location-stations-link color-purple text-decoration-none" href="">Фили</a>
+          <span class="color-transparent-black">6 мин на транспорте</span>
+        </div>
+        <div class="relative">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6aaa96e9184b54eeaf07efe477201fc77ac33d7993c0ff470d0fbb9e45a35df1&amp;height=407&amp;lang=ru_RU&amp;scroll=true"></script>
+          <div class="overlay d-none">
+            <form class="overlay-form" action="">
+              <label class="overlay-label d-flex align-items-center">
+                <input class="overlay-checkbox" type="checkbox" name="" id="" checked>
+                <span class="overlay-custom-checkbox"></span>
+                Школы
+              </label>
+              <label class="overlay-label d-flex align-items-center">
+                <input class="overlay-checkbox" type="checkbox" name="" id="" checked>
+                <span class="overlay-custom-checkbox"></span>
+                Аптеки
+              </label>
+              <label class="overlay-label d-flex align-items-center">
+                <input class="overlay-checkbox" type="checkbox" name="" id="">
+                <span class="overlay-custom-checkbox"></span>
+                Высшие учебные заведения
+              </label>
+              <label class="overlay-label d-flex align-items-center">
+                <input class="overlay-checkbox" type="checkbox" name="" id="">
+                <span class="overlay-custom-checkbox"></span>
+                Больницы
+              </label>
+              <label class="overlay-label d-flex align-items-center">
+                <input class="overlay-checkbox" type="checkbox" name="" id="" checked>
+                <span class="overlay-custom-checkbox"></span>
+                Магазины
+              </label>
+              <label class="overlay-label d-flex align-items-center">
+                <input class="overlay-checkbox" type="checkbox" name="" id="" checked>
+                <span class="overlay-custom-checkbox"></span>
+                Фитнес
+              </label>
+              <button class="absolute overlay-btn map-btn mx-auto bg-white" type="submit">Объекты инфраструктуры</button>
+            </form>
+          </div>
+          <button class="absolute map-btn mx-auto bg-white">Объекты инфраструктуры</button>
+        </div>
+      </section>
+      <section>
+        <h2 class="header-level-2 color-black mb-0">Смотрите также</h2>
+        <ul class="see-also-list d-flex flex-wrap justify-content-between pl-0 mb-56">
+          <li class="see-also-item">
+            <div class="lh-1 color-white d-flex relative">
+              <picture>
+                <source srcset="img/img1-mobile.jpg" media="(max-width: 767px)">
+                <source srcset="img/img1-tablet.jpg" media="(max-width: 1199px)">
+                <img src="img/img1.jpg" alt="жилой квартал">
+              </picture>
+              <button class="see-also-button absolute"><img src="img/rocket.svg" width="20" height="23" alt="rocket"></button>
+              <button class="see-also-second-button absolute"><img src="img/crown.svg" width="17" height="15" alt="crown"></button>
+              <b class="absolute see-also-price">8 217 030 - 29 070 951₽</b>
+              <p class="absolute see-also-description">569 квартир в продаже</p>
+            </div>
+            <a class="see-also-link text-decoration-none" href="#">
+              <div>
+                <h3 class="header-level-3">ЖК «Level Стрешнево» (Левел Стрешнево)</h3>
+                <p class="text-small mt-0 mb-2">Москва, СВАО</p>
+                <span class="text-small see-also-station">Алексеевская</span>
+                <span class="see-also-time text-small">5 мин</span>
+              </div>
+            </a>
+          </li>
+          <li class="see-also-item">
+            <div class="lh-1 color-white d-flex relative">
+              <picture>
+                <source srcset="img/img2-mobile.jpg" media="(max-width: 767px)">
+                <source srcset="img/img2-tablet.jpg" media="(max-width: 1199px)">
+                <img src="img/img2.jpg" alt="жилой квартал">
+              </picture>
+              <button class="see-also-button absolute">
+                <span class="see-also-img">%</span>
+              </button>
+              <span class="see-also-hidden absolute d-none">Действует скидка</span>
+              <b class="absolute see-also-price">8 217 030 - 29 070 951₽</b>
+              <p class="absolute see-also-description">569 квартир в продаже</p>
+            </div>
+            <a class="see-also-link text-decoration-none" href="#">
+              <div>
+                <h3 class="header-level-3">ЖК «Новое Медведково»</h3>
+                <p class="text-small mt-0">Москва, СВАО</p>
+                <span class="text-small see-also-station">Алексеевская</span>
+                <span class="see-also-time text-small">5 мин</span>
+              </div>
+            </a>
+          </li>
+          <li class="see-also-item">
+            <div class="lh-1 color-white d-flex relative">
+              <picture>
+                <source srcset="img/img3-mobile.jpg" media="(max-width: 767px)">
+                <source srcset="img/img3-tablet.jpg" media="(max-width: 1199px)">
+                <img src="img/img3.jpg" alt="жилой квартал">
+              </picture>
+              <b class="absolute see-also-price">8 217 030 - 29 070 951₽</b>
+              <p class="absolute see-also-description">569 квартир в продаже</p>
+            </div>
+            <a class="see-also-link text-decoration-none" href="#">
+              <div>
+                <h3 class="header-level-3">ЖК «Люберецкий»</h3>
+                <p class="text-small mt-0">Москва, СВАО</p>
+                <span class="text-small see-also-station">Алексеевская</span>
+                <span class="see-also-time text-small">5 мин</span>
+              </div>
+            </a>
+          </li>
+          <li class="see-also-item">
+            <div class="lh-1 color-white d-flex relative">
+              <picture>
+                <source srcset="img/img4-mobile.jpg" media="(max-width: 767px)">
+                <source srcset="img/img4-tablet.jpg" media="(max-width: 1199px)">
+                <img src="img/img4.jpg" alt="жилой квартал">
+              </picture>
+              <b class="absolute see-also-price">8 217 030 - 29 070 951₽</b>
+              <p class="absolute see-also-description">569 квартир в продаже</p>
+            </div>
+            <a class="see-also-link text-decoration-none" href="#">
+              <div>
+                <h3 class="header-level-3">ЖК «Измайловский лес»</h3>
+                <p class="text-small mt-0">Москва, СВАО</p>
+                <span class="text-small see-also-station">Алексеевская</span>
+                <span class="see-also-time text-small">5 мин</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="bg-purple form-block">
+      <div class="container mx-auto">
+        <form class="form d-flex flex-column align-items-start" action="">
+          <h2 class="header-level-2">Запишитесь на просмотр и оцените всё сами!</h2>
+          <input class="w-100 form-text mb-32" type="text" placeholder="Как вас зовут?" required>
+          <div class="select-container w-100 d-flex justify-content-between mb-32 flex-wrap">
+            <select class="form-select form-text mb-32" name="" id="">
+              <option class="form-option" value="16 сентября">16 сентября</option>
+              <option class="form-option" value="16 сентября">17 сентября</option>
+              <option class="form-option" value="16 сентября">18 сентября</option>
+            </select>
+            <select class="form-select form-text mb-32" data-placeholder="14:00" name="" id="">
+              <option value="14:00"></option>
+              <option value="14:00">12:00</option>
+              <option value="14:00">14:00</option>
+              <option value="14:00">16:00</option>
+            </select>
+          </div>
+          <input class="w-100 form-text mb-26" type="text" placeholder="Ваш телефон" required>
+          <label class="remind lh-1 d-flex align-items-center">
+            <input class="checkbox" type="checkbox" name="" id="" value="" checked>
+            <span class="checkbox-custom"></span>
+            Напомните мне за 2 часа до визита
+          </label>
+          <input class="btn btn-submit color-purple" type="submit" value="Отправить" disabled>
+        </form>
+        <div class="form-success d-flex">
+          <div class="circle relative">
+            <img class="circle-img absolute" src="img/check.svg" alt="check">
+          </div>
+          <section>
+            <h2 class="header-level-2">Вы успешно записались <br> на просмотр в ЖК Headliner!</h2>
+            <p class="form-success-text">Мы ждем вас 16 сентября в 16:00</p>
+          </section>
+        </div>
+      </section>
+  </div>
+  </main>
+  <footer class="bg-grey">
+    <div class="container mx-auto d-flex justify-content-between flex-wrap">
+      <section class="footer-section">
+        <h4 class="header-level-4 relative d-flex align-items-center">Новостройки
+          <button class="absolute footer-hamburger d-none"></button>
+        </h4>
+        <ul class="footer-list pl-0 mb-32">
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">Квартиры в Москве</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">Квартиры в Новой Москве</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">Квартиры в Подмосковье</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">В Москве</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">В Подмосковье</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">В Новой Москве</a></li>
+        </ul>
+      </section>
+      <section class="footer-section">
+        <h4 class="header-level-4 relative d-flex align-items-center">Популярное
+          <button class="absolute footer-hamburger d-none"></button>
+        </h4>
+        <ul class="footer-list pl-0">
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">В рассрочку</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">Военная ипотека</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">До 4 млн</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">До 6 млн</a></li>
+          <li class="footer-list-item"><a class="footer-link color-transparent-black text-decoration-none" href="#">Внутри МКАД</a></li>
+        </ul>
+      </section>
+      <section class="footer-section">
+        <h4 class="header-level-4">Рекламный отдел</h4>
+        <a class="footer-link color-transparent-black text-decoration-none" href="tel:+7 (495) 987-42-47">+7 (495) 987-42-47 доб. 501</a>
+        <a class="footer-link color-transparent-black text-decoration-none" href="mailto:kp@novostroy-m.ru">kp@novostroy-m.ru</a>
+      </section>
+      <h4 class="footer-section header-level-4">© 2011—2020 Новострой-М<br>
+        Всё, что нужно знать о новостройках
+      </h4>
+    </div>
+  </footer>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/chosen.jquery.min.js"></script>
+  <script src="js/chosen.proto.min.js"></script>
+  <script>
+    $(".form-select").chosen({
+      disable_search:	true,
+    })
+  </script>
+</body>
+</html>
